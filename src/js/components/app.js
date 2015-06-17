@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react';
+import Layout from './layout';
 import ProgressChart from './progress-chart';
 import formatters from '../util/formatters';
 
@@ -34,15 +35,15 @@ export default React.createClass({
 
         return (
             <div className='app card'>
-                <div className="row">
-                    <div className="col-xs-12">
+                <div className='row'>
+                    <div className='col-xs-12'>
                         <p className='pull-right'>{goalNumber + ' goal'}</p>
                         <p className='text-left'>Money</p>
                         <ProgressChart {...this.state}/>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-xs-12">
+                <div className='row'>
+                    <div className='col-xs-12'>
                         <p className='pull-right'>{rateNumber}</p>
                         <p className='text-left'>Rate</p>
                         <input
